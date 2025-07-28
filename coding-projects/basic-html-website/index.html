@@ -37,12 +37,11 @@
     }
 
     .main-container {
-      border: 1px solid white;
+      /* border: 1px solid white; */
+      height: 100vh;
     }
 
     nav {
-      margin-top: 20px;
-      margin-bottom: 20px;
       align-items: center;
     }
 
@@ -93,22 +92,63 @@
       align-items: center;
       margin-right: 30px;
     }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .hero-title {
+      font-size: 64px;
+    }
+
+    .hero-subtitle {
+      font-size: 21px;
+    }
+
+    .main-section {
+      display: flex;
+    }
+
+    .projects-aside {
+      background-color: red;
+    }
   </style>
   <body>
     <div class="main-container">
-      <!-- Navigation -->
-      <nav>
-        <div class="nav-box"></div>
-        <div class="nav-brand">
-          <h1 class="nav-logo">your name</h1>
-        </div>
-        <ul>
-          <li><a href="#">Home /</a></li>
-          <li><a href="#">Projects /</a></li>
-          <li><a href="#">Articles /</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
+      <!-- Navigation Section-->
+      <section class="navigation">
+        <nav>
+          <div class="nav-box"></div>
+          <div class="nav-brand">
+            <h1 class="nav-logo">your name</h1>
+          </div>
+          <ul>
+            <li><a href="#">Home /</a></li>
+            <li><a href="#">Projects /</a></li>
+            <li><a href="#">Articles /</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </section>
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1 class="hero-title">Frontend Developer</h1>
+        <p class="hero-subtitle">beginner frontend developer</p>
+      </section>
+
+      <!-- Main Section -->
+      <main class="main-section">
+        <aside class="projects-aside">
+          <h1>Projects</h1>
+          <p>Frontend Website</p>
+          <p>Frontend Website</p>
+          <p>Frontend Website</p>
+        </aside>
+      </main>
     </div>
   </body>
 </html>
