@@ -111,10 +111,29 @@
 
     .main-section {
       display: flex;
+      flex-direction: row;
     }
 
-    .projects-aside {
-      background-color: red;
+    .work-section {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .work-section {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .aside-container {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+
+      width: 20em;
+    }
+    .aside-1 {
+      border: 1px solid white;
+      padding: 10px 10px 10px 40px;
     }
   </style>
   <body>
@@ -142,12 +161,32 @@
 
       <!-- Main Section -->
       <main class="main-section">
-        <aside class="projects-aside">
-          <h1>Projects</h1>
-          <p>Frontend Website</p>
-          <p>Frontend Website</p>
-          <p>Frontend Website</p>
-        </aside>
+        <div class="aside-container">
+          <aside class="projects-aside">
+            <div class="aside-1">
+              <h1 class="aside-title">Projects</h1>
+              <p>HTML Only Portfolio</p>
+            </div>
+            <div class="aside-1">
+              <p>Calculator</p>
+            </div>
+            <div class="aside-1">
+              <p>Quiz App</p>
+            </div>
+            <div class="aside-1">
+              <p>Countdown Timer</p>
+            </div>
+            <div class="aside-1">Project Upcoming Page</div>
+          </aside>
+          <div class="work-section">
+            <section class="work-experience">
+              <h1>Work Experience</h1>
+              <p>roadmap.sh</p>
+              <p>Solved all the frontend projects</p>
+              <a href="#">Visit my Profile</a>
+            </section>
+          </div>
+        </div>
       </main>
     </div>
   </body>
