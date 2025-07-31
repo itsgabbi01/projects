@@ -85,8 +85,9 @@
       .portfolio-container {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        padding: 50px;
+        justify-content: center;
+        align-content: center;
+        margin: 50px;
       }
 
       /* Column 1: Project List */
@@ -103,6 +104,7 @@
 
       .portfolio-container .column .projects-list li {
         border: 1px solid white;
+        border-left: none;
         border-right: none;
         border-bottom: none;
       }
@@ -112,24 +114,85 @@
         padding: 10px 20px 10px 20px;
       }
       /* Column 2: Work and Open Source */
-      .portfolio-container .work-item {
-        border: 1px solid white;
-        border-left: none;
-        border-right: none;
-        border-top: none;
-        padding: 20px;
+      .portfolio-container .work-item:first-child {
+        border-bottom: 1px solid white;
       }
+
+      .portfolio-container .work-item h3,
+      .portfolio-container .work-item p,
+      .portfolio-container .work-item a {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
       /* Column 3: Education */
-
-      .portfolio-container .column .courses-list h3 {
+      .portfolio-container .column p {
+        padding-left: 10px;
         margin-top: 10px;
-        margin-left: 100px;
+        margin-bottom: 10px;
       }
 
-      /* TODO: 
-      - REMOVE LIST STYLE
-      - SPACING 
-      - PADDING AND MARGIN */
+      .portfolio-container .column h3 {
+        padding-left: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      .portfolio-container .column .courses-list li {
+        list-style: none;
+        margin-left: 10px;
+        padding: 10p;
+      }
+
+      /* Testimonial Section */
+      .testimonial-container {
+        padding: 50px;
+        text-align: center;
+      }
+
+      .testimonial-container h2 {
+        margin-bottom: 40px;
+        font-size: 2em;
+      }
+
+      .testimonial-flex {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      .testimonial-container .testimonial-box {
+        border: 1px solid white;
+        padding: 25px;
+        border-radius: 15px;
+        flex: 1;
+        min-width: 300px;
+        max-width: 450px;
+        text-align: left;
+      }
+
+      .testimonial-container .testimonial-box blockquote {
+        margin-bottom: 15px;
+        font-style: italic;
+      }
+
+      .testimonial-container .testimonial-box cite,
+      span {
+        color: #aaa;
+        display: block;
+      }
+
+      .testimonial-container .testimonial-box cite {
+        font-weight: bold;
+        font-style: normal;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        margin-bottom: 25px;
+      }
     </style>
   </head>
   <body>
@@ -200,5 +263,63 @@
         </ul>
       </div>
     </section>
+
+    <!-- Testimonial Section -->
+    <section class="testimonial-container">
+      <h2>Reviews from my Teachers</h2>
+      <div class="testimonial-flex">
+        <figure class="testimonial-box">
+          <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+            molestiae?
+          </blockquote>
+          <figcaption>
+            <cite>Jane Doe</cite>
+            <span>Assistant Professor</span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial-box">
+          <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+            molestiae?
+          </blockquote>
+          <figcaption>
+            <cite>Jane Doe</cite>
+            <span>Assistant Professor</span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial-box">
+          <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+            molestiae?
+          </blockquote>
+          <figcaption>
+            <cite>Jane Doe</cite>
+            <span>Assistant Professor</span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial-box">
+          <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+            molestiae?
+          </blockquote>
+          <figcaption>
+            <cite>Jane Doe</cite>
+            <span>Assistant Professor</span>
+          </figcaption>
+        </figure>
+        <figure class="testimonial-box">
+          <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+            molestiae?
+          </blockquote>
+          <figcaption>
+            <cite>Jane Doe</cite>
+            <span>Assistant Professor</span>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <footer>&COPY; Basic HTML Website Project</footer>
   </body>
 </html>
