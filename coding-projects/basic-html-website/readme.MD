@@ -17,5 +17,4 @@ This is a beginner-friendly project demonstrating how to build a multi-section p
 
 Project link: https://github.com/itsgabbi01/projects/tree/main/coding-projects/basic-html-website
 
-Source project: 
-- https://roadmap.sh/projects/basic-html-website
+https://roadmap.sh/projects/basic-html-website
